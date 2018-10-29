@@ -1,0 +1,15 @@
+.post {
+  width: 700px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 30px;
+  background: #fff;
+  margin: 20px 0 0 0;
+}
+
+p {
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.7;
+}
