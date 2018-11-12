@@ -12,7 +12,7 @@ const Container = styled.div`
 const Form = styled.form`
     margin-top: 20px;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     display: flex;
 
     input {
@@ -47,7 +47,6 @@ const Form = styled.form`
 const Main = () => (
     <Container>
         <img src={logo} alt="GitHub Compare" />
-
         <Form>
             <input type="text" placeholder="user/repo" />
             <button type="submit">OK</button>
