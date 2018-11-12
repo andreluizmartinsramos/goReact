@@ -1,16 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
-import './styles/global';
+import React from "react";
+import styled from "styled-components";
+import Main from "./pages/Main";
 
-const Title = styled.h1`
-  font-size: 12px;
-  color: red;
-`;
+class App extends React.Component {
+    componentWillMount() {
+        document.body.style.backgroundColor = "#DC6A17";
+    }
 
-const App = () => (
-  <div className="App">
-    <Title>Hello World!</Title>
-  </div>
-);
+    render() {
+        return <Main />;
+    }
+}
 
 export default App;
