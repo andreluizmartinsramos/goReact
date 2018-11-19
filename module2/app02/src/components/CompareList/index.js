@@ -11,6 +11,8 @@ const CompareList = ({ repositories }) => (
                         src={repository.owner.avatar_url}
                         alt={repository.owner.login}
                     />
+
+                    <i className="fa fa-twitter" />
                     <strong>{repository.name}</strong>
                     <small>{repository.owner.login}</small>
                 </header>
@@ -26,7 +28,7 @@ const CompareList = ({ repositories }) => (
                         {repository.open_issues_count} <small>issues</small>
                     </li>
                     <li>
-                        {repository.pushed_sat} <small>last commit</small>
+                        {repository.lastCommit} <small>last commit</small>
                     </li>
                 </ul>
             </Repository>
@@ -36,7 +38,7 @@ const CompareList = ({ repositories }) => (
 
 CompareList.propTypes = {
     repositories: PropTypes.arrayOf(
-        Proptypes.shape({
+        PropTypes.shape({
             id: PropTypes.number,
             name: PropTypes.string,
             owner: PropTypes.shape({

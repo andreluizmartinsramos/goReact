@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "font-awesome/css/font-awesome.css";
 
 export const Container = styled.div`
     display: flex;
@@ -18,7 +19,7 @@ export const Form = styled.form`
         height: 55px;
         padding: 0 20px;
         background: #fff;
-        border: 0;
+        border: ${props => (props.withError === true ? "2px solid red" : 0)};
         font-size: 18px;
         color: #444;
         border-radius: 3px;
