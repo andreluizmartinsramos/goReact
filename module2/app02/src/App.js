@@ -1,19 +1,25 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import Main from "./pages/Main";
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: #DC6A17;
+    font-family: 'sans-serif';
+    margin:0;
+    padding: 0;
+    outline: 0;
+  }
+`;
 
 class App extends Component {
-    componentWillMount() {
-        const body = document.body.style;
-
-        body.backgroundColor = "#DC6A17";
-        body.fontFamily = "sans-serif";
-        body.margin = "0px";
-        body.padding = "0px";
-        body.outline = "0px";
-    }
-
     render() {
-        return <Main />;
+        return (
+            <Fragment>
+                <GlobalStyle />
+                <Main />
+            </Fragment>
+        );
     }
 }
 
