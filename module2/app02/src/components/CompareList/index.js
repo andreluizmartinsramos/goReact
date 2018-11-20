@@ -11,8 +11,6 @@ const CompareList = ({ repositories }) => (
                         src={repository.owner.avatar_url}
                         alt={repository.owner.login}
                     />
-
-                    <i className="fa fa-twitter" />
                     <strong>{repository.name}</strong>
                     <small>{repository.owner.login}</small>
                 </header>

@@ -36,6 +36,7 @@ export const Form = styled.form`
         margin-left: 5px;
         font-weight: bold;
         cursor: pointer;
+        width: 80px;
 
         &:hover {
             background: #52d89f;

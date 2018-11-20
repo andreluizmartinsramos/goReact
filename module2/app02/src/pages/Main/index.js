@@ -54,9 +54,11 @@ export default class Main extends Component {
                         }
                     />
                     <button type="submit">
-                        {this.state.repositoryLoading === false
-                            ? "Ok"
-                            : "Loading..."}
+                        {this.state.repositoryLoading === false ? (
+                            "Ok"
+                        ) : (
+                            <i className="fa fa-spinner fa-pulse" />
+                        )}
                     </button>
                 </Form>
                 <CompareList repositories={this.state.repositories} />
